@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.task1 {
+  position: relative;
+  text-align: center;
+  height: 190vh;
+}
+.task1 .parallex-effect {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.task1 .parallex-effect .landscape {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("../assets/landscape.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
+}
+
+.task1 .parallex-effect .title {
+  position: absolute;
+  left: 40%;
+  top: 15%;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 9.875rem;
+  line-height: 11.56rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  z-index: 1;
+}
+.task1 .parallex-effect .sky {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../assets/sky.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 875px) {
+  .task1 .parallex-effect .title {
+    font-size: 6rem;
+    left: 30%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .task1 .parallex-effect .title {
+    font-size: 4rem;
+    left: 20%;
+  }
+}
