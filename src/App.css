@@ -1,63 +1,24 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-.App {
-  position: relative;
-  text-align: center;
-  height: 200vh;
-}
-.App .parallex-effect {
-  position: relative;
-  min-height: 100vh;
-  overflow: hidden;
-}
-.App .parallex-effect .landscape {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
+.app .pagination {
   width: 100%;
-  background-image: url("./assets/landscape.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 2;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.2rem 0;
+  box-sizing: border-box;
+  background: #fff;
 }
+.app .pagination > span {
+  display: block;
+  padding: 0.4rem 0.9rem;
+  font-size: 1.2rem;
 
-.App .parallex-effect .title {
-  position: absolute;
-  left: 40%;
-  top: 15%;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 9.875rem;
-  line-height: 11.56rem;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  z-index: 1;
+  cursor: pointer;
+  border-radius: 50%;
 }
-.App .parallex-effect .sky {
-  position: relative;
-  height: 100vh;
-  width: 100vw;
-  background-image: url("./assets/sky.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.app .pagination > span:hover {
+  transition: border 0.3s ease-in;
+  border: solid 1px rgb(0, 0, 0);
 }
-
-@media only screen and (max-width: 875px) {
-  .App .parallex-effect .title {
-    font-size: 6rem;
-    left: 30%;
-  }
-}
-@media only screen and (max-width: 450px) {
-  .App .parallex-effect .title {
-    font-size: 4rem;
-    left: 20%;
-  }
+.active {
+  border: solid 1px #8e8e8e;
 }
