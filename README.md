@@ -1,4 +1,4 @@
-# Foxmula_task1
+# Foxmula_tasks
 ## [live](https://foxmula-intern-tasks.netlify.app/)
 ## Tech Stack-
 <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
